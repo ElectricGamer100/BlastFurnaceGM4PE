@@ -45,9 +45,7 @@ function useItem(x,y,z,i,b,s,id,bd){
 }
 
 function modTick(){
-  if(structureOneConfirmed == true){
-    clientMessage("yay");
-  }
+  BlastFurnace.checkForItems();
 }
 
 function leaveGame(){
@@ -70,8 +68,8 @@ function newLevel(){
 
 BlastFurnace.checkForItems == function (){
   if(Level.getFurnaceSlot(Player.getPointedBlockX(),Player.getPointedBlockY(),Player.getPointedBlockX(),0) == 5){
-
-    }
+    clientMessage("GG");
+  }
 }
 
 
