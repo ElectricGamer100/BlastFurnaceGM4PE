@@ -53,8 +53,8 @@ function leaveGame(){
   ModPE.saveData("structureOneX",structureOneX);
   ModPE.saveData("structureOneY",structureOneY);
   ModPE.saveData("structureOneZ",structureOneZ);
-  ModPE.saveData("structureOneIronCount", structureOneIronCOunt);
-  ModPE.saveData("structureOneGoldCount", structureOneGoldCOunt);
+  ModPE.saveData("structureOneIronCount", structureOneIronCount);
+  ModPE.saveData("structureOneGoldCount", structureOneGoldCount);
 }
 
 function newLevel(){
