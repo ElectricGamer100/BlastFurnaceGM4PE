@@ -40,3 +40,15 @@ function useItem(x,y,z,i,b,s,id,bd){
   }
 }
 
+function modTick(){
+  if(structureOneConfirmed == true){
+    clientMessage("yay");
+  }
+}
+
+function leaveGame(){
+  ModPE.saveData("structureOneConfirmed",structureOneConfirmed);
+  ModPE.saveData("structureOneX",structureOneX);
+  ModPE.saveData("structureOneY",structureOneY);
+  ModPE.saveData("structureOneZ",structureOneZ);
+}
