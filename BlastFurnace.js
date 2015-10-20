@@ -52,3 +52,10 @@ function leaveGame(){
   ModPE.saveData("structureOneY",structureOneY);
   ModPE.saveData("structureOneZ",structureOneZ);
 }
+
+function newLevel(){
+  ModPE.readData("structureOneConfirmed");
+  ModPE.readData("structureOneX");
+  ModPE.readData("structureOneY");
+  ModPE.readData("structureOneZ");
+}
