@@ -6,6 +6,8 @@ var structureOneGoldCount = 0;
 
 var structureOneConfirmed = false;
 
+var BlastFurnace = {};
+
 function useItem(x,y,z,i,b,s,id,bd){
   if(i == 0 && b == 1 && Level.getTile(x+1,y,z) == 1 && Level.getTile(x-1,y,z) == 1 && Level.getTile(x+1,y,z+1) == 1 && Level.getTile(x-1,y,z+1) == 1 && Level.getTile(x,y,z+1) == 1 && Level.getTile(x+1,y,z+2) == 1 && Level.getTile(x-1,y,z+2) == 1 && Level.getTile(x,y,z+2) == 1){
     structureOneConfirmed = true;
@@ -66,6 +68,11 @@ function newLevel(){
   ModPE.readData("structureOneGoldCount");
 }
 
+BlastFurnace.checkForItems == function (){
+  if(Level.getFurnaceSlot(Player.getPointedBlockX(),Player.getPointedBlockY(),Player.getPointedBlockX(),0) == 5){
+
+    }
+}
 
 
 
